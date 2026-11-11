@@ -1,0 +1,52 @@
+:root {
+    --bg: #eef1ea;
+    --utama: #87a082;
+    --judul: #5f7a5a;
+    --teks-header: #fff;
+    --baris: #f4f7f1;
+    --garis: #d3dccf;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.box {
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--judul);
+}
+
+p {
+    color: #444;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid var(--garis);
+    padding: 8px 16px;
+    text-align: left;
+}
+
+th {
+    background: var(--utama);
+    color: var(--teks-header);
+}
+
+tr:nth-child(even) {
+    background: var(--baris);
+}
